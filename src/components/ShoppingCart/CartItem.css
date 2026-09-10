@@ -1,0 +1,46 @@
+.item-box {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 150px 100px 100px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.item-box .quantity-counter {
+  justify-self: center;
+}
+
+.item-price {
+  justify-self: end;
+  color: #101828;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.item-name {
+  color: #101828;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.09375rem;
+}
+
+.item-brand {
+  color: #99A1AF;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
