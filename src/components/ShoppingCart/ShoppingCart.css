@@ -1,1 +1,13 @@
+.shopping-cart-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
 
+.product-list-box {
+  flex: 1;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}

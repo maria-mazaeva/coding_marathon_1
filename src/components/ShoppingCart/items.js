@@ -1,0 +1,42 @@
+export const items = [
+  {
+    product        : "Wireless Keyboard",
+    brand       : "TechBrand",
+    quantity    : 1,
+    subtotal    : 35,
+    tax         : 8.40,
+    availability: "In stock",
+  },
+  {
+    product        : "USB-C Hub",
+    brand       : "ConnectPro",
+    quantity    : 3,
+    subtotal    : 45,
+    tax         : 10.80,
+    availability: "Limited stock",
+  },
+  {
+    product        : "Laptop Stand",
+    brand       : "ErgoLift",
+    quantity    : 1,
+    subtotal    : 25,
+    tax         : 6.00,
+    availability: "In stock",
+  },
+  {
+    product        : "Bluetooth Speaker",
+    brand       : "SoundWave",
+    quantity    : 2,
+    subtotal    : 60,
+    tax         : 14.40,
+    availability: "Out of stock",
+  },
+  {
+    product        : "Webcam HD",
+    brand       : "VisionTech",
+    quantity    : 1,
+    subtotal    : 45,
+    tax         : 10.80,
+    availability: "Pre-order",
+  },
+];

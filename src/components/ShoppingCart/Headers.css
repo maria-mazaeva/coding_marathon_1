@@ -1,0 +1,57 @@
+.headers {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 150px 100px 100px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-label {
+  color: #6B7280;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.quantity-label {
+  justify-self: center;
+}
+
+.price-label {
+  justify-self: end;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-self: end;
+}
+
+.divider {
+  width: 1px;
+  height: 1.25rem;
+  background: #E5E7EB;
+}
+
+.remove-selected {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: none;
+  border: none;
+  color: #F87171;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
