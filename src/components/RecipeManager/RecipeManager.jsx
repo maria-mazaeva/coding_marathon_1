@@ -26,6 +26,9 @@ function RecipeManager() {
   function handleAllergensChange(event) {setAllergens(event.target.value);}
   function handleIngredientsChange(event) {setIngredients(event.target.value);}
 
+
+  // functions to change recipe list: adding and deleting recipes:
+
   function addRecipe () {
     if (name.trim() === "" || description.trim() === "" || cuisine.trim() === "" || difficulty.trim() === "" 
         || cookTime.trim() === "" || servings.trim() === "" || allergens.trim() === "" 
@@ -35,7 +38,7 @@ function RecipeManager() {
       }
           
     setRecipeList((r) => [...r, { name, description, cuisine, difficulty, cookTime, servings, allergens, ingredients}]);
-    // Clear the input fields: 
+    // Clear the input fields after recipe is added: 
     setName("");
     setDescription("");
     setCuisine("");
