@@ -1,46 +1,55 @@
-# Self-Assessment: BookCollectionManager.jsx
+# Self-Assessment: RecipeManager.jsx
 
 
 ## 1. Functionality
 - **Does the component meet the requirements?**
-  - [ ] Does it handle all the specified features (e.g., adding, removing, or updating books)?
-  - [ ] Are edge cases handled (e.g., empty inputs, duplicate entries)?
-  - [ ] Are there any bugs or unexpected behaviors?
+  - [+] Does it handle all the specified features (e.g., adding, removing)?
+  - [+] Are edge cases handled (e.g., empty inputs, duplicate entries)?
+  - [-] Are there any bugs or unexpected behaviors?
 
 - **How well does the component integrate with other parts of the application?**
-  - [ ] Are props and state managed appropriately?
+  - [+] Are props and state managed appropriately?
 
 ## 2. Code Quality
 - **Readability**
-  - [ ] Is the code easy to understand for other developers?
-  - [ ] Are variable and function names descriptive and meaningful?
+  - [+] Is the code easy to understand for other developers?
+  - [+] Are variable and function names descriptive and meaningful?
 
 
 - **Reusability**
-  - [ ] Can the component or parts of it be reused in other parts of the application?
+  - [+] Can the component or parts of it be reused in other parts of the application?
 
 - **Comments and Documentation**
-  - [ ] Are there comments explaining complex logic?
-  - [ ] Is there documentation for how to use the component?
+  - [+] Are there comments explaining complex logic?
+  - [-] Is there documentation for how to use the component?
 
 ## 3. Performance
 - **Efficiency**
-  - [ ] Are there any unnecessary re-renders or performance bottlenecks?
-  - [ ] Is the component optimized for large datasets (if applicable)?
+  - [-] Are there any unnecessary re-renders or performance bottlenecks?
+  - [?] Is the component optimized for large datasets (if applicable)?
 
 - **State Management**
-  - [ ] Is state managed efficiently (e.g., minimal state, derived state)?
-  - [ ] Are hooks (e.g., `useState`, ) used correctly?
+  - [+] Is state managed efficiently (e.g., minimal state, derived state)?
+  - [+] Are hooks (e.g., `useState`, ) used correctly?
 
 ## 4. Overall Assessment
 - **Strengths**
-  - List the strengths of the component.
+  - Clean separation of elements: RecipeManager deals with logic, while Recipe 
+    handles rendering a single item.
+  - Consistant naming: all similar elements have same name structure, which improves
+    readability of the code. 
 
 - **Areas for Improvement**
-  - List areas where the component could be improved.
+  - every single recipe could be given its own id number upon creation.
+  - numbers. can go negative ("there is "minus one amount of servings"), should
+    be not less than one.
+  - existing recipe cannot be updated. The whole recipe should be removed and added as
+    a new one.
 
 - **Action Plan**
-  - Outline specific steps to address the areas for improvement.
+  - Give each recipe a unique id at creation time.
+  - set number to be no less than "1".
+  - create "updateRecipe" function.
 
 ## 5. Additional Notes
-- Add any other relevant observations or feedback about the component.
+- -
