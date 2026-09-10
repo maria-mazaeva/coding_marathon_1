@@ -24,27 +24,32 @@ function BookCollectionManager() {
   function handleAuthorChange(event) {
     setAuthor(event.target.value);
   }
-
+  // Handle input change for genre
   function handleGenreChange(event) {
     setGenre(event.target.value);
   }
-
+  
+  // Handle input change for language
   function handleLanguageChange(event) {
     setLanguage(event.target.value);
   }
 
+  // Handle input change for edition
   function handleEditionChange(event) {
     setEdition(event.target.value);
   }
 
+  // Handle input change for pages
   function handlePagesChange(event) {
     setPages(event.target.value);
   }
 
+  // Handle input change for rating
   function handleRatingChange(event) {
     setRating(event.target.value);
   }
 
+  // Handle input change for year
   function handleYearChange(event) {
     setYear(event.target.value);
   }
@@ -58,11 +63,13 @@ function BookCollectionManager() {
     const trimmedLanguage = language.trim();
     const trimmedEdition = edition.trim();
 
+    // Validate that all fields are filled
     if (trimmedTitle === "" || trimmedAuthor === "" || trimmedGenre === "" || trimmedLanguage === "" || trimmedEdition === "" || pages === "" || rating === "" || year === "") {
       alert("All fields are required.");
       return;
     }
-    
+  
+    //Set the new book to the books array
     setBooks((b) => [...b,
       {
         title: trimmedTitle,
@@ -76,6 +83,7 @@ function BookCollectionManager() {
       },
     ]);
 
+    // Clear input fields after adding a book
     setTitle("");
     setAuthor("");
     setGenre("");
