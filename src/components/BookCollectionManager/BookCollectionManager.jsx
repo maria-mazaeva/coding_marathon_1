@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./BookCollectionManager.css";
+import Book from "./Book";
 
 
 function BookCollectionManager() {
@@ -111,21 +112,21 @@ function BookCollectionManager() {
           className="input-field"
         />
         <input
-          type="text"
+          type="number"
           placeholder="Enter number of pages..."
           value={pages}
           onChange={handlePagesChange}
           className="input-field"
         />
         <input
-          type="text"
+          type="number"
           placeholder="Enter rating..."
           value={rating}
           onChange={handleRatingChange}
           className="input-field"
         />
         <input
-          type="text"
+          type="number"
           placeholder="Enter year..."
           value={year}
           onChange={handleYearChange}
@@ -143,24 +144,18 @@ function BookCollectionManager() {
         ) : (
           <ol className="books-list">
             {books.map((book, index) => (
-              <li key={index} className="book-item">
-                <div className="book-info">
-                  <span className="book-title">{book.title}</span>
-                  <span className="book-author">by {book.author}</span>
-                  <span className="book-genre">Genre: {book.genre}</span>
-                  <span className="book-language">Language: {book.language}</span>
-                  <span className="book-edition">Edition: {book.edition}</span>
-                  <span className="book-pages">Pages: {book.pages}</span>
-                  <span className="book-rating">Rating: {book.rating}</span>
-                  <span className="book-year">Year: {book.year}</span>
-                </div>
-                <button
-                  onClick={() => deleteBook(index)}
-                  className="delete-button"
-                >
-                  Delete
-                </button>
-              </li>
+              <Book className="book-item"
+                key={index}
+                title={book.title}
+                author={book.author}
+                genre={book.genre}
+                language={book.language}
+                edition={book.edition}
+                pages={book.pages}
+                rating={book.rating}
+                year={book.year}
+                onDelete={() => deleteBook(index)}
+              />  
             ))}
           </ol>
         )}
