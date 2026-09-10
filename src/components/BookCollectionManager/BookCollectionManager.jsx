@@ -52,18 +52,40 @@ function BookCollectionManager() {
 
   // Add a new book to the list
   function addBook() {
-    if (title.trim() !== "" && author.trim() !== "") {
-      setBooks((b) => [...b, { title, author, genre, language, edition, pages, rating, year }]);
-      setTitle("");
-      setAuthor("");
-      setGenre("");
-      setLanguage("");
-      setEdition("");
-      setPages("");
-      setRating("");
-      setYear("");
+    const trimmedTitle = title.trim();
+    const trimmedAuthor = author.trim();
+    const trimmedGenre = genre.trim();
+    const trimmedLanguage = language.trim();
+    const trimmedEdition = edition.trim();
+
+    if (trimmedTitle === "" || trimmedAuthor === "" || trimmedGenre === "" || trimmedLanguage === "" || trimmedEdition === "" || pages === "" || rating === "" || year === "") {
+      alert("All fields are required.");
+      return;
     }
+    
+    setBooks((b) => [...b,
+      {
+        title: trimmedTitle,
+        author: trimmedAuthor,
+        genre: trimmedGenre,
+        language: trimmedLanguage,
+        edition: trimmedEdition,
+        pages,
+        rating,
+        year,
+      },
+    ]);
+
+    setTitle("");
+    setAuthor("");
+    setGenre("");
+    setLanguage("");
+    setEdition("");
+    setPages("");
+    setRating("");
+    setYear("");
   }
+
 
   // Delete a book from the list
   function deleteBook(index) {
