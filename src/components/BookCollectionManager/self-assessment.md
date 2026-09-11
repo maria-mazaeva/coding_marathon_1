@@ -1,5 +1,6 @@
 # Self-Assessment: BookCollectionManager.jsx
 done by Veranika Dzehtsiarenka
+added points in 5. additional notes
 
 ## 1. Functionality
 - **Does the component meet the requirements?**
@@ -42,4 +43,22 @@ done by Veranika Dzehtsiarenka
   - work on the errorhandling + add some hints to users, what to change and where is the mistake
 
 ## 5. Additional Notes
-- no
+
+I did everything that was mentioned in coding marathon requierments, the main goal is achieved: correct use of useState and controlled forms, clean, readable, and well-organized code. Of course code could be improved in some way - but there were no strict rules for edge cases or documentation, for example. 
+
+As a group, we organized effective Git branching and merging + GitHub pages deployment. 
+
+So I gime myself max points. 
+
+- Correct use of useState and controlled forms -	15
+- Clean, readable, and well-organized code - 15
+- Self-assessment - 15
+- *Total Individual* - 45
+
+
+- Effective Git branching and merging -	20
+- GitHub Pages deployment - 	15
+- *Total	Group* - 35
+
+
+
