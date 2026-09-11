@@ -11,7 +11,11 @@ const Register = ({receivedCountry, receivedEmail, receivedPassphrase, receivedC
         if (receivedEmail){
             if (receivedPassphrase !== "") {
                 if (receivedPassphrase == receivedConfirmPassphrase) {
-                    setText(greetings[countries.indexOf(receivedCountry)] + "! Your email address is " + receivedEmail)
+                    if (receivedCountry) {
+                        setText(greetings[countries.indexOf(receivedCountry)] + "! Your email address is " + receivedEmail)
+                    } else {
+                        setText("Nationality undefined")
+                    }
                 } else {
                     setText("Passwords don't match")
                 }
