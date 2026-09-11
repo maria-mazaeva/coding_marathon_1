@@ -1,5 +1,5 @@
 # Self-Assessment: RecipeManager.jsx
-
+   # Maria Mazaeva 
 
 ## 1. Functionality
 - **Does the component meet the requirements?**
@@ -52,4 +52,14 @@
   - create "updateRecipe" function.
 
 ## 5. Additional Notes
-- -
+
+  I have implemented "Recipe Manager" part:
+
+- Individual Score:
+  I give myself 45/45, I think I managed to implement all requirements and havent noticed any bugs so far.
+
+- Group Score:
+  I give my group 35/35, as when I checked other pages - I hadn't 
+  found any bugs and implementation looked according to instructions.
+
+- The reflection part is going to be in reflection journal.
