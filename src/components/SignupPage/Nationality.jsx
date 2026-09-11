@@ -4,6 +4,7 @@ const Nationality = ({inputValue, onInputChange}) => {
     <div>
       <h4>Nationality</h4>
       <select className="select-field" value={inputValue} onChange={(e) => onInputChange(e.target.value)}>
+        <option value="" disabled selected hidden>Select an option</option>
         <option>Finnish</option>
         <option>English</option>
         <option>German</option>
