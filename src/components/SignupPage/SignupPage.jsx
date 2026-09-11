@@ -4,6 +4,8 @@ import ConfirmPassphrase from "./ConfirmPassphrase";
 import Nationality from "./Nationality";
 import Register from "./Register";
 
+import "./SignupPage.css"
+
 function SignupPage() {
   return (
     <div>

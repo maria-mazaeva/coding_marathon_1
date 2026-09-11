@@ -2,7 +2,7 @@
 const Register = () => {
   return (
     <div>
-      <button>Sign Up!</button>
+      <button className="signup">Sign Up!</button>
       <br/><br/>
       <p></p>
     </div>
