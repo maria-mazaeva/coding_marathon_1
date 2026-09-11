@@ -61,5 +61,6 @@
 - Group Score:
   I give my group 35/35, as when I checked other pages - I hadn't 
   found any bugs and implementation looked according to instructions.
+  We had no problems with git, no conflicts, everyone was working on its own brunch and merging were done with no issues. Collaboration also went well, we helped each other when needed and answered each others questions. 
 
 - The reflection part is going to be in reflection journal.
